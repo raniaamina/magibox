@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Categories=Utilities;GTK;
+Name=magibox
+Comment="Easy tool to assign your favorite shortcut in a button"
+TryExec=/usr/local/bin/magibox
+Exec=magibox
+Icon=/usr/share/magibox/imgs/magibox.png
+MimeType=all/allfiles;inode/directory;
+X-KDE-Library=pasopati
+X-KDE-FactoryName=devlovers
+X-KDE-ServiceType=utils

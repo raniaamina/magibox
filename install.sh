@@ -69,8 +69,10 @@ sudo mkdir -p /usr/share/magibox/imgs
 fi
 
 sudo cp images/magibox.png /usr/share/magibox/imgs/magibox.png
+sudo cp images/magibox.desktop /usr/share/applications/magibox.desktop
 
-sudo cp magibox /usr/local/bin/magibox
+sudo cp magibox.sh /usr/local/bin/magibox
+sudo chmod +x /usr/local/bin/magibox
 sudo chown $USER /usr/local/bin/magibox
 if [[ -f /usr/local/bin/magibox ]]; then
 echo " - Copying executable"

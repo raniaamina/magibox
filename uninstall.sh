@@ -8,6 +8,7 @@ if [ $? -eq 0 ]; then
     echo "Remove config"
     rm -rf $HOME/.config/magibox
     sudo rm -rf /usr/share/magibox
+    sudo rm /usr/share/applications/magibox.desktop
     sleep 1
 
     if [[ ! -d $HOME/.config/magibox ]]; then
