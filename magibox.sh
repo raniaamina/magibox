@@ -6,7 +6,7 @@
 set -e
 
 VERSION=0.5.1
-DIALOGSET="--center --window-icon=/usr/share/magibox/imgs/magibox.png --width=450"
+DIALOGSET="--center --window-icon=/usr/share/magibox/imgs/magibox.png --name=magibox --class=Devlovers --width=450"
 KEY=`echo $RANDOM`
 keepKey="$HOME/.config/magibox/keep-key.conf"
 mainKey="$HOME/.config/magibox/mainkey.conf"
