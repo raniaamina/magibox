@@ -47,14 +47,14 @@ fi
 
 # Install script
 if [[ ! -d $HOME/.config/magibox ]]; then
-mkdir -p $HOME/.config/magibox
+mkdir -p $HOME/.config/magibox/keymap
 fi
 
 echo Installing script
 sleep 1
-cp mainkey.conf $HOME/.config/magibox/mainkey.conf
+cp mainkey.conf $HOME/.config/magibox/keymap/0-default.conf
 
-if [[ -f $HOME/.config/magibox/mainkey.conf ]]; then
+if [[ -d $HOME/.config/magibox/keymap ]]; then
 echo " - Copying configuration"
 sleep 1
 else
