@@ -1,22 +1,47 @@
-[ : bracket_left
-] : bracket_right
-{ : brace_left
-} : brace_right
-( : paren_left
-) : paren_right
-& : ampersand
-^ : caret
-% : percent
-$ : dollar
-# : hash
-@ : at
-! : exclamation
-< : less
-> : greater
-? : question
-. : period
-, : comma
-; : semicolon
-: : colon
-' : quote
-" : double_quote
+[           : bracket_left
+]           : bracket_right
+{           : brace_left
+}           : brace_right
+(           : paren_left
+)           : paren_right
+&           : ampersand
+^           : caret
+%           : percent
+$           : dollar
+#           : hash
+@           : at
+!           : exclamation
+<           : less
+>           : greater
+?           : question
+.           : period
+,           : comma
+;           : semicolon
+:           : colon
+'           : quote
+"           : double_quote
+
+
+Up arrow    : Up
+Down arrow  : Down
+Left arrow  : Left
+Right arrow : Right
+Page Up     : Prior
+Page Down   : Next
+Home        : Home
+End         : End
+
+Caps Lock   : Caps_Lock
+Shift       : Shift_L
+Control     : Control_L
+Tab         : Tab
+Delete      : Delete
+Backspace   : BackSpace
+
+Escape      : Escape
+Insert      : Insert
+Print Screen: Print
+Alt         : Alt_L
+Windows Key : Super_L
+Pause       : Pause
+Break       : Break
