@@ -1,1 +1,3 @@
 *.sh.x.c 
+dist/*
+build/*
