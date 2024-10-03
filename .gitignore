@@ -1,3 +1,4 @@
 *.sh.x.c 
 dist/*
 build/*
+magibox.spec
