@@ -1,28 +1,50 @@
  # Magibox 
- **Magibox**: Easy tool to assign your favorite shortcut in a button.
+ **Magibox**: Easy tool to assign your favorite shortcut combination in a button.
 This tool will help you organize and assign your favorit shortcut into organized button. 
 
 ## Dependencies
-- Yad
-- Kdialog
+- python3-tk
+- python3-ttkthemes
 - Xdotool
+- wmctrl
 
-## Installation
-Download / Clone this repository, then run `install.sh` script.
-For uninstall, just do same thing to `uninstall.sh` script.
+## Usage
+- Download the latest [release](https://github.com/raniaamina/magibox/releases/)
+- Download the magibox-*.zip file
+- Extract the zip
+- Just run double click `magibox`
+
+Make sure the `magibox` file has executable permission (`chmod +x /path/to/magibox`).
+You can also run the py file via command `python3 magibox.py`
+
+Select the window of application that you wanna set to receive command from Magibox.
 
 ## Configuration
-You can personalize the button task / assign the shortcut by editting mainkey.conf that you can found in `$HOME/.config/magibox`. Don't remove the comment "# Key", just edit the name and command. The name value will appear as button text and the command value will execute when button is pressed.
+You can personalize the button task / assign the shortcut by editting magi.conf that you can found inside extracted folder. Don't remove the comment "# Key", just edit the name and command. The name value will appear as button text and the command value will execute when button is pressed. Each should line follows this format:
+`Label = key_combination`
 
 ```bash
-# Key 01
-Name: Microphone
-Command: xdotool key 0xff13
+# example
+Copy = ctrl+c
+Paste = ctrl+v
 ```
 
-We recomend to use xdotool to asssign shotcut key into those command. Please refer to this list: https://gitlab.com/cunidev/gestures/-/wikis/xdotool-list-of-key-codes to get info about available key kode.
+You can assign more than one combination shortcut key into one button;
+
+```bash
+# example
+CopyPaste = ctrl+c ctrl+v
+```
+
+Each combination separated by space. For special character, please refer to [special-key-references.txt](special-key-references.txt)
+
+You can create you own configuration for each apps, and then run magibox with this following parameter
+
+```bash
+./magibox --useconf /path/to/custom.conf
+```
 
 ## Disclaimer 
-We don't guarantee anything about this tool/extension, so please use it at your own risk. We can't give 24/7 support if you have a problem when using Inkporter. Of course we'll help as much as we can. The Gimpscape Telegram group is the best place to ask your questions about this extension.
+We don't guarantee anything about this tool/extension, so please use it at your own risk. We can't give 24/7 support if you have a problem when using Magibox. 
 
-If you feel that this extension has helped you to create, feel free to donate a cup of coffee on the [Dev-Lovers Page](https://support.dev-is.my.id/index-en) :")
+If you feel that this tool has helped you to create, feel free to donate a cup of coffee on the [Support Dev](https://saweria.co/raniaamina) :")
